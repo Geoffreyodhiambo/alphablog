@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphaBlog</title>
+    <title>GEOFFREY BLOG</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +11,10 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
-    <%= render 'layouts/messages' %>
-    <%= yield %>
+    <div id="page-content">
+      <%= render 'layouts/messages' %>
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
+</html>
